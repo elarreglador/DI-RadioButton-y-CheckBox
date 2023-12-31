@@ -1,0 +1,23 @@
+<label for="opcion1">Opción 1</label>
+<input type="checkbox" id="opcion1" name="opciones" value="opcion1">
+
+<label for="opcion2">Opción 2</label>
+<input type="checkbox" id="opcion2" name="opciones" value="opcion2">
+
+<label for="opcion3">Opción 3</label>
+<input type="checkbox" id="opcion3" name="opciones" value="opcion3">
+
+<button type="button" onclick="mostrarEstado()">Mostrar Estado</button>
+
+<script>
+    function mostrarEstado() {
+        // Obtener todos los elementos checkbox
+        var checkboxes = document.getElementsByName('opciones');
+
+        // Iterar sobre los checkboxes para mostrar su estado
+        for (var i = 0; i < checkboxes.length; i++) {
+            var checkbox = checkboxes[i];
+            alert('Checkbox ' + checkbox.value + ': ' + checkbox.checked);
+        }
+    }
+</script>

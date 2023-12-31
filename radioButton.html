@@ -1,0 +1,22 @@
+<input type="radio" id="radio1" name="grupoA" value="a"> A
+<input type="radio" id="radio2" name="grupoA" value="b" checked> B
+<br>
+<input type="radio" id="radio3" name="grupoB" value="c" checked> C
+<input type="radio" id="radio" name="grupoB" value="d"> D
+
+<script>
+    let radio1 = document.getElementById("radio1");
+    let radio2 = document.getElementById("radio2");
+
+    radio1.addEventListener('click', () => {
+        if (radio1.checked) {
+            alert(radio1.value);
+        }
+    })
+
+    radio2.addEventListener('click', () => {
+        if (radio2.checked){
+            alert(radio2.value);
+        }
+    })
+</script>
